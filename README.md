@@ -1,1 +1,5 @@
-# Country-Detail
+streamlit
+pandas
+numpy
+scikit-learn
+plotly
