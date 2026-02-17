@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 import pickle
 
-df = pd.read_csv(r"Data\gas_prices.csv")
+df = pd.read_csv("Data/gas_prices.csv")
 
 models = {}
 
@@ -27,3 +27,4 @@ for country in df.columns[1:]:
 pickle.dump(models, open("country_models.pkl", "wb"))
 
 print("All countries are running successfully")
+
