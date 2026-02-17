@@ -6,7 +6,7 @@ st.title("Country Prediction")
 
 @st.cache_resource
 def load_models():
-    return pickle.load(open("D:\DS_Improvement\Streamlit\country_models.pkl", "rb"))
+    return pickle.load(open("country_models.pkl", "rb"))
 
 models = load_models()
 
@@ -30,3 +30,4 @@ if st.button("Predict"):
     prediction = model.predict(np.array([[year]]))
 
     st.success(f"Predicted {country} Value in {year}: {prediction[0]:.2f}")
+
